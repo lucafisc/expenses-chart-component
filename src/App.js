@@ -1,11 +1,14 @@
 import "./App.css";
 import Balance from "./components/Balance";
+import Spending from "./components/Spending";
 
 function App() {
   const amount = 921.48;
+  const spending = [26.14, 34.87, 52.36, 31.07, 28.56, 45.02, 34.56];
   return (
     <div className="App">
       <Balance amount={amount} />
+      <Spending spending={spending} />
     </div>
   );
 }

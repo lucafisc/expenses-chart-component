@@ -37,3 +37,27 @@
   height: 35px;
   max-height: 100%;
 }
+
+.spending {
+  margin-top: 12px;
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.graphs {
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ec765d;
+  border-radius: 10px;
+}
