@@ -6,8 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: default;
 }
 
 :root {
   --radius: 15px;
+}
+
+#root {
+  height: 100vh;
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Graph from "./Graph";
+import Total from "./Total";
 
 function Spending(props) {
   const { spending } = props;
@@ -17,9 +18,9 @@ function Spending(props) {
 
   return (
     <div className="spending">
-      <h1>Spending - last 7 days</h1>
+      <h1>Spending - Last 7 days</h1>
       <div className="graphs">{bars}</div>
-      <h1>{total}</h1>
+      <Total total={total} />
     </div>
   );
 }

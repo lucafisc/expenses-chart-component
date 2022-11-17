@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   color: white;
 }
 
@@ -44,7 +44,12 @@
   width: 100%;
   max-width: 450px;
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 30px;
+}
+
+.spending>h1 {
+  font-size: 24px;
+  color: #392315;
 }
 
 .graphs {
@@ -56,8 +61,66 @@
   gap: 20px;
 }
 
+.bar-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
 .bar {
   width: 100%;
   background-color: #ec765d;
   border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar:hover {
+  background-color: #ff9b87;
+}
+
+.bar:active {
+  background-color: #b4dfe5;
+}
+
+.bar-legend {
+  opacity: 0;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar-legend>p {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: #392315;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.bar:hover>.bar-legend {
+  opacity: 1;
+}
+
+.total-container {
+  margin-top: 25px;
+}
+
+.total-container>hr {
+  border-color: #f7e9dc;
+  border-top: 4px;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numbers>div>h4 {
+  text-align: right;
 }
